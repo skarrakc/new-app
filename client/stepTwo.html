@@ -1,0 +1,175 @@
+<template name="stepTwo">  
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <strong>Lose Weight -- MCII Form</strong>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal formOne" role="form">
+                <div class="row">
+                    <div class="control-group col-md-offset-2 col-md-6" id="fields">
+                        <div class="controls"> 
+                            <form role="form" autocomplete="off">
+                                <label class="control-label centered">Positive Aspects </label>
+                                <div class="pull-right">
+                                    <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">what is it about ?</a>
+                                </div>
+                                <div class="entry input-group col-md-12">
+                                    <input class="form-control " name="fields[]" type="text" />
+                    	            <span class="input-group-btn">
+                                        <button class="btn btn-success btn-add" type="button">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <br>
+                                <small>Press <span class="glyphicon glyphicon-plus gs"></span> to add another positive aspect</small>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-offset-1 col-md-3" style="font-size: 22px;" id="fields">
+                        <i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <hr>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-6">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-file">
+                            </span>Challenge One</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="pull-right">
+                                        <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">what is it about ?</a>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Express yourself about an obstacle" rows="2" required></textarea>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">what is it about ?</a>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Think how you can deal with it when it happens" rows="3" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <label for="category">Difficulty level</label>
+                                    <div class="range range-warning">
+                                        <input type="range" name="range" min="1" max="100" value="50" onchange="rangeWarning.value=value">
+                                        <output id="rangeWarning">50</output>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="category">
+                                            Category</label>
+                                        <select class="form-control" id="category">
+                                            <option>Personal</option>
+                                            <option>Professional</option>
+                                            <option>Related to Family</option>
+                                            <option>Other
+                                            
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="well well-sm well-default">
+                                        <form class="form form-inline " role="form">
+                                        <div class="form-group col-md-offset-9">
+                                            <button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-floppy-disk">
+                                            </span>Save</button>
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-file">
+                            </span>Challenge Two</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Express yourself about an obstacle" rows="2" required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Think how you can deal with it when it happens" rows="3" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <label for="category">Difficulty level</label>
+                                    <div class="range range-warning">
+                                        <input type="range" name="range" min="1" max="100" value="50" onchange="rangeWarning.value=value">
+                                        <output id="rangeWarning">50</output>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="category">
+                                            Category</label>
+                                        <select class="form-control" id="category">
+                                            <option>Personal</option>
+                                            <option>Professional</option>
+                                            <option>Related to Family</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="well well-sm well-default">
+                                        <form class="form form-inline " role="form">
+                                        <div class="form-group col-md-offset-9">
+                                            <button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-floppy-disk">
+                                            </span>Save</button>
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-offset-1 col-md-3" style="font-size: 22px;" id="fields">
+            <i class="fa fa-exclamation-circle fa-5x" aria-hidden="true"></i>
+        </div>
+    </div>
+                <hr>
+                <div class="col-md-offset-2">
+                    <button type="button" class="btn btn-link btn-lg">Learn more about the MCII Approach !</button>
+                    <ul class="list-inline pull-right">
+                        <li><button type="button" class="btn btn-primary next-step">Previous step</button></li>
+                        <li><button type="button" class="btn btn-primary btn-lg next-step">Save and continue</button></li>
+                    </ul>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>
+

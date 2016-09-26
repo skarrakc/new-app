@@ -1,0 +1,74 @@
+<template name="loseWeight">
+ 
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="main.html">WG</a>
+    </div>
+    <!-- /.navbar-header -->
+    <ul class="nav navbar-nav">
+        <li><a href="#">Dashboard</a></li>
+    </ul>
+</nav>   
+
+<div class="container">
+	<div class="row">
+		<section>
+        <div class="wizard">
+            <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-folder-open"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-pencil"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-picture"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-ok"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form role="form">
+                <div class="tab-content">
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        {{> stepOne}}
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        {{> stepTwo}}
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step3">
+                  
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="complete">
+             
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+   </div>
+</div>   
+    
+    
+</template>
